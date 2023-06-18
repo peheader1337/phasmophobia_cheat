@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="includes">
+      <UniqueIdentifier>{072b1f12-a1fc-4a61-a22b-37f47eef1780}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entry">
+      <UniqueIdentifier>{886f9db8-ba8c-48b4-9445-1a5ab0142761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\binaries">
+      <UniqueIdentifier>{b34d0170-e53b-4920-bf84-2f677f244952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="includes\minhook">
+      <UniqueIdentifier>{4ce20750-60cd-4ffe-b518-15b62a7aced9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes.hpp">
+      <Filter>includes</Filter>
+    </ClInclude>
+    <ClInclude Include="entry.hpp">
+      <Filter>entry</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\buffer.h">
+      <Filter>includes\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\hde32.h">
+      <Filter>includes\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\hde64.h">
+      <Filter>includes\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\MinHook.h">
+      <Filter>includes\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\pstdint.h">
+      <Filter>includes\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\table32.h">
+      <Filter>includes\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\table64.h">
+      <Filter>includes\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="minhook\trampoline.h">
+      <Filter>includes\minhook</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="entry.cpp">
+      <Filter>entry</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\buffer.c">
+      <Filter>includes\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\hde32.c">
+      <Filter>includes\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\hde64.c">
+      <Filter>includes\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\hook.c">
+      <Filter>includes\minhook</Filter>
+    </ClCompile>
+    <ClCompile Include="minhook\trampoline.c">
+      <Filter>includes\minhook</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="phasmophobia_cheat.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\binaries\phasmophobia_enzo.dll" />
+  </ItemGroup>
+</Project>
